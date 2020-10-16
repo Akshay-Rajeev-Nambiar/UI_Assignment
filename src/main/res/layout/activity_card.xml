@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CardActivity">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:padding="5dp"
+        android:src="@drawable/notifications_icon"
+        app:layout_constraintEnd_toEndOf="@+id/titleBar"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/blue" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/payment_textview"
+        android:textColor="@color/black_text"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="358dp"
+        android:layout_height="201dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:elevation="0dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:hapticFeedbackEnabled="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:focusable="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="10dp"
+            android:background="@drawable/card">
+
+            <ImageView
+                android:layout_width="51dp"
+                android:layout_height="33dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="11dp"
+                android:src="@drawable/mastercard" />
+
+            <TextView
+                android:id="@+id/car_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="57dp"
+                android:text="@string/carrd_number_text"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="29dp"
+                android:layout_marginBottom="59dp"
+                android:textSize="12sp"
+                android:textColor="@color/blue_text"
+                android:text="@string/card_holder_tv" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="59dp"
+                android:textSize="12sp"
+                android:textColor="@color/blue_text"
+                android:text="@string/exp_date_tv" />
+
+            <TextView
+                android:id="@+id/username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="29dp"
+                android:layout_marginBottom="28dp"
+                android:text="@string/username_tv"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/expdate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="28dp"
+                android:text="@string/expdate_tv"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_details"
+        android:layout_width="358dp"
+        android:layout_height="201dp"
+        android:layout_marginTop="32dp"
+        app:cardElevation="9dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="44dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="37dp"
+                android:src="@drawable/mastercard" />
+
+            <TextView
+                android:id="@+id/clear_bttn"
+                android:layout_width="46dp"
+                android:layout_height="49dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black_text"
+                android:textSize="20sp"
+                app:drawableEndCompat="@drawable/clear_bttn" />
+
+            <EditText
+                android:id="@+id/card_number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_margin="10dp"
+                android:inputType="number"
+                android:maxLength="19"
+                android:hint="@string/card_number_et"
+                android:textStyle="italic"/>
+
+            <EditText
+                android:id="@+id/card_username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/card_number"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:inputType="textCapWords"
+                android:hint="@string/username_et"
+                android:maxLength="21"
+                android:textStyle="italic"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "/>
+
+            <EditText
+                android:id="@+id/card_exp_date"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/card_username"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:inputType="date"
+                android:focusable="false"
+                android:hint="@string/expiry_date_et"
+                android:textStyle="italic"/>
+
+            <EditText
+                android:id="@+id/card_cvv"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/card_username"
+                android:layout_toEndOf="@+id/card_exp_date"
+                android:layout_margin="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:inputType="number"
+                android:maxLength="3"
+                android:hint="@string/cvv_et"
+                android:textStyle="italic"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/add_card_bttn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/add_new_card"
+        android:textColor="@color/blue"
+        android:textAllCaps="false"
+        android:foreground="@drawable/round_ripple_button"
+        android:background="@drawable/rounded_stroke_button"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_details"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <Button
+        android:id="@+id/update_bttn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update_profile"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginStart="25dp"
+        android:elevation="10dp"
+        android:layout_marginEnd="25dp"
+        android:hapticFeedbackEnabled="true"
+        android:foreground="@drawable/round_ripple_button"
+        android:backgroundTint="@color/blue"
+        android:background="@drawable/rounded_stroke_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_card_bttn" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

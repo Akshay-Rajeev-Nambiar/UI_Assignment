@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Card Assignment</string>
+    <string name="start_button_text">PRESS</string>
+    <string name="payment_textview">Payment</string>
+    <string name="add_new_card">+ Add new card</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="pick_card_expiry_date">Pick card expiry date</string>
+    <string name="carrd_number_text">XXXX XXXX XXXX XXXX</string>
+    <string name="card_holder_tv">CARD HOLDER</string>
+    <string name="exp_date_tv">EXP DATE</string>
+    <string name="username_tv">XXXXXX</string>
+    <string name="expdate_tv">- / -</string>
+    <string name="clear_bttn">X</string>
+    <string name="card_number_et">Card number</string>
+    <string name="username_et">Username</string>
+    <string name="expiry_date_et">Expiry date</string>
+    <string name="cvv_et">CVV</string>
+</resources>
